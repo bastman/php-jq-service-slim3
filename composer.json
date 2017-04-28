@@ -1,0 +1,49 @@
+{
+  "name": "bastman/php-jq-service-slim3",
+  "keywords": [
+    "jq",
+    "jmespath",
+    "slim3",
+    "playground"
+  ],
+  "config": {
+    "cache-dir": ".composer-cache",
+    "bin-dir": "bin",
+    "preferred-install": "dist"
+  },
+  "repositories": [
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "mtdowling/jmespath.php": "~2.2.0",
+    "guzzlehttp/guzzle": "~6.1",
+    "slim/slim": "^3.0",
+    "danielstjules/stringy": "~2.2",
+    "symfony/console": "~3.0",
+    "aws/aws-sdk-php": "~3.15"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Mg\\JmesPathServer\\": "app/src/"
+    },
+    "classmap": [
+    ]
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -v"
+    ]
+  },
+  "archive": {
+    "exclude": [
+      "/vendor",
+      "/.idea",
+      "/.git",
+      "/.composer-cache"
+    ]
+  },
+  "bin": [
+  ]
+}

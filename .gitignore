@@ -1,0 +1,46 @@
+
+
+###################
+
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
+## Directory-based project format:
+.idea/
+
+###################
+
+### Composer template
+composer.phar
+vendor/
+
+# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+composer.lock
+
+.composer-cache
+
+########
+
+### OSX template
+.DS_Store
+
+
+########
+
+
+### bin ###
+
+#bin/composer
+bin/jp.php
+
+## app ##
+app/config/env/current/*
+releases/*
+
+
+### user
+
+bin/seb.php
+bin/seb.sh
+
+#####
