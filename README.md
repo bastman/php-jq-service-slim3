@@ -9,7 +9,7 @@ a sample microservice showcasing jmespath aka "jq"
 
     copy your *.json files into folder app/resources/datasource/
 
-# query you json data sources
+# query your json data sources
 
     $ http://localhost:8080/dataset_10000/search?q=.
     $ http://localhost:8080/dataset_10000/search?q=items[0].foo.bar.txt
