@@ -16,7 +16,9 @@
   "require": {
     "php": ">=5.5.9",
     "mtdowling/jmespath.php": "~2.4",
-    "slim/slim": "^3.8"
+    "slim/slim": "^3.8",
+    "bastman/php7-arrayly": "0.0.1",
+    "danielstjules/stringy": "^3.0"
   },
   "require-dev": {
   },

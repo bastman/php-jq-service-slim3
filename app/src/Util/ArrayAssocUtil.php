@@ -72,6 +72,32 @@ class ArrayAssocUtil
 
     /**
      * @param array $data
+     * @param string|int|float $key
+     * @param \Closure $defaultSupplier
+     * @return mixed
+     */
+    public static function getKeyOrElse($data, $key, \Closure $defaultSupplier)
+    {
+        if (!is_array($data)) {
+
+            return $defaultSupplier();
+        }
+
+        if (!is_scalar($key)) {
+
+            return $defaultSupplier();
+        }
+
+        if (array_key_exists($key, $data)) {
+
+            return $data[$key];
+        }
+
+        return $defaultSupplier();
+    }
+
+    /**
+     * @param array $data
      * @param \Closure $predicate
      * @return array
      */

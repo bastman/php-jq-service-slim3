@@ -13,7 +13,7 @@ class ExceptionUtil
      * @return array
      */
     public static function exceptionAsArray(
-        \Exception $exception,
+        \Throwable $exception,
         $isDebugEnabled
     )
     {
@@ -46,7 +46,7 @@ class ExceptionUtil
      * @return array|null
      */
     private static function exceptionAsArrayRecursive(
-        \Exception $exception,
+        \Throwable $exception,
         $isDebugEnabled,
         $recursionLevel,
         $recursionLevelMax
